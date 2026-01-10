@@ -170,13 +170,13 @@ These constraints make the simulation suitable for statistical analysis and acad
 
 
 ### Normal play: number of steals a gift can have increases
-![Rare jackpot gift dominating play](animations/normal__nplayers_15__nruns_5000__locknum_(1, 15).gif)
+![Normal play: number of steals a gift can have increases](animations/normal__nplayers_15__nruns_5000__locknum_1-15.gif)
 
 ### Variant Comparison: Player 1 Swaps at the End
-![Effect of early player swap cards](animations/p1_extra_turn__nplayers_15__nruns_5000__locknum_(1, 15).gif)
+![Variant Comparison: Player 1 Swaps at the End](animations/p1_extra_turn__nplayers_15__nruns_5000__locknum_1-15.gif)
 
 ### Variant: Player Swaps
-![Steal chains forming and resolving](https://github.com/JamisonBlair/white_elephant/blob/dev/animations/p1_extra_turn__nplayers_15__nruns_5000__locknum_(1%2C%2015).gif)
+![Steal chains forming and resolving](animations/early_player_swaps__nplayers_15__nruns_10000__locknum_2_swapcardthresh_1-15.gif)
 
 <!-- 
 ## Limitations
