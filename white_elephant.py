@@ -201,6 +201,7 @@ class WhiteElephantGame:
                  lock_num=2, 
                  variant='normal',
                  swap_card_thresh=3,
+                 verbose=False
                 ):
         """
         Initialize a White Elephant game instance.
@@ -216,9 +217,10 @@ class WhiteElephantGame:
         lock_num : int, optional
             Maximum number of steals before a gift locks.
         variant : str, optional
-            Game variant controlling special rules.
+            Game variant controlling special rules. Options: ['p1_extra_turn','early_player_swaps']
         swap_card_thresh : int, optional
             Number of early players eligible for swap cards.
+        verbose : bool, print more information about the game.
         """
         if seed is not None:
             random.seed(seed)
@@ -227,8 +229,14 @@ class WhiteElephantGame:
         self.round = 0
         self.jackpot = jackpot
         self.lock_num = lock_num
+        self.verbose = verbose
         self.variant = variant
         self.swap_card_thresh = swap_card_thresh
+        
+        if variant not in ['p1_extra_turn','early_player_swaps']:
+            variant = 'normal'
+            if self.verbose:
+                print('variant not recognized, playing normal game.')
 
         # Create gifts
         self.gifts = {}
@@ -461,7 +469,7 @@ class WhiteElephantGame:
         players_with_swaps = list(
             filter(lambda x: x.swap_card and x.gifts_held != [], self.players)
         )
-        random.shuffle(players_with_swaps)
+        #random.shuffle(players_with_swaps)
 
         for player in players_with_swaps:
             if (
