@@ -203,7 +203,7 @@ Unlike the normal game curves, these curves have a distinct minimum in the middl
 
 ### Letting Players Swap Unwanted Gifts
 
-One potential way to balance White Elephant is to let the game continue with swaps until all presents are locked. However, White Elephant is supposed to be fun, and that approach sounds tedious and exhausting. Instead, we consider a variation that encourages swapping during normal gameplay: **White Elephant: Swap Attack** (WE:SA).
+One potential way to balance White Elephant is to let the game continue with swaps until all presents are locked. However, White Elephant is supposed to be fun, and that approach sounds tedious and exhausting. Instead, we consider a variation that encourages swapping during normal gameplay.
 
 This variant originated from asking what would happen if the first few players (say, three) were allowed to “call a swap” on a gift immediately after it is unwrapped. In this action, there is a wanted gift (the newly unwrapped one) and an unwanted gift. This swap could only be used once and would count toward the wanted gift’s steal count, but not the unwanted gift’s.
 
